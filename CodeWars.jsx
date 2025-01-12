@@ -56,3 +56,24 @@ function createPhoneNumber(numbers) {
   return phoneNumber;
 }
 console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
+
+
+function maskify(cc) {
+   return cc.split("").map((x,i) => (i<cc.length-4)?x="#":x).join("");
+}
+
+
+function solution(str){
+   var arr = str.split('')
+   var res = []
+
+   for(let i = 0; i<arr.length; i+=2){
+     if(arr[i+1]) res.push(arr[i]+arr[i+1])
+     else res.push(arr[i]+'_')
+   }
+
+  return res
+}
+
+
+
