@@ -5,27 +5,6 @@ function add(n) {
   };
   
 
-  const array = [true, true, false];
-const op = 'AND';
-function logicalCalc(array, op){
-   var result = array[0];
-   for(var i = 1; i < array.length; i++){
-      if(op == "AND"){
-         result = result && array[i];
-      }
-      if(op == "OR"){
-         result = result || array[i];
-      }
-      if(op == "XOR"){
-         result = result != array[i];
-      }
-   }
-   return result;
-}
-console.log(logicalCalc(array, op));
-
-
-
 
 let arr1 = [1, 2, 2, 2, 3];
 let arr2 = [2];
